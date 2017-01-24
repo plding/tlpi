@@ -9,6 +9,7 @@
 #include <errno.h>      /* Declares errno and defines error constants */
 #include <string.h>     /* Commonly used string-handling functions */
 
+#include "get_num.h"
 #include "error_functions.h"
 
 #ifdef TRUE
