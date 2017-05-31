@@ -48,7 +48,7 @@ outputError(Boolean useErr, int err, Boolean flushStdout,
     else
         snprintf(errText, BUF_SIZE, ":");
 
-    snprintf(buf, BUF_SIZE, "ERROR%s %s", errText, userMsg);
+    snprintf(buf, BUF_SIZE, "ERROR%s %s\n", errText, userMsg);
 
     if (flushStdout)
         fflush(stdout);     /* Flush any pending stdout */
