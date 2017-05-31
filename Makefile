@@ -1,5 +1,6 @@
 DIRS = lib \
-	fileio
+	fileio \
+	proc
 
 all:
 	@for dir in ${DIRS}; do ${MAKE} -C $${dir}; done

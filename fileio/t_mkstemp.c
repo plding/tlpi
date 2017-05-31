@@ -24,8 +24,8 @@ main(int argc, char *argv[])
 
     printf("File content: %s\n", buf);
     
-    // if (unlink(template) == -1)
-    //     errExit("unlink");
+    if (unlink(template) == -1)
+        errExit("unlink");
 
     if (close(fd) == -1)
         errExit("close");
