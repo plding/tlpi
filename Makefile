@@ -5,7 +5,8 @@
 #
 
 DIRS = lib \
-	fileio
+	fileio \
+	signals
 
 # Dummy targets for building and clobbering everything in all subdirectories
 

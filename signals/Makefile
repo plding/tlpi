@@ -1,6 +1,6 @@
 include ../Makefile.inc
 
-GEN_EXE = copy seek_io t_truncate
+GEN_EXE = ouch intquit
 
 LINUX_EXE =
 
@@ -16,4 +16,4 @@ clean:
 showall:
 	@echo ${EXE}
 
-${EXE}: ${TLPI_LIB}		# True as a rough approximation
+${EXE}: ${TLPI_LIB}
