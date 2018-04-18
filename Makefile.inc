@@ -4,6 +4,8 @@ TLPI_DIR = ..
 TLPI_LIB = ${TLPI_DIR}/libtlpi.a
 TLPI_INC_DIR = ${TLPI_DIR}/lib
 
+LINUX_LIBCRYPT = -lcrypt
+
 # "-Wextra" is a more descriptive synonym for "-W", but only
 # available in more recent gcc versions
 

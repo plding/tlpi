@@ -5,8 +5,10 @@
 int
 main(int argc, char **argv)
 {
-    printf("SIGINT: %s\n", strsignal(SIGINT));
-    printf("SIGTERM: %s\n", strsignal(SIGTERM));
+    int i;
+
+    for (i = 1; i < NSIG; i++)
+        printf("%d: %s\n", i, strsignal(i));
 
     exit(EXIT_SUCCESS);
 }
