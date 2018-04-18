@@ -5,5 +5,6 @@
 #include "tlpi_hdr.h"
 
 void printSigset(FILE *of, const char *prefix, sigset_t *mask);
+int printSigMask(FILE *of, const char *msg);
 
 #endif
