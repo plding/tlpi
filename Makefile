@@ -6,7 +6,8 @@
 
 DIRS = lib \
 	fileio \
-	signals
+	signals \
+	procexec
 
 # Dummy targets for building and clobbering everything in all subdirectories
 
