@@ -1,6 +1,7 @@
 include ../Makefile.inc
 
-GEN_EXE = t_fork fork_file_sharing
+GEN_EXE = t_fork t_vfork fork_file_sharing fork_whos_on_first \
+	fork_sig_sync
 
 LINUX_EXE =
 
