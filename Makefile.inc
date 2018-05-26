@@ -16,7 +16,7 @@ LINUX_LIBCRYPT = -lcrypt
 # or "#define _BSD_SOURCE" in the example programs with
 # "#define _DEFAULT_SOURCE".)
 
-CFLAGS = -std=c99 -D_XOPEN_SOURCE=600 \
+IMPL_CFLAGS = -std=c99 -D_XOPEN_SOURCE=600 \
     -D_DEFAULT_SOURCE \
     -g -I${TLPI_INC_DIR} \
     -Wall \
@@ -25,6 +25,12 @@ CFLAGS = -std=c99 -D_XOPEN_SOURCE=600 \
     -Wno-sign-compare \
     -Wno-unused-parameter
 
-LDLIBS = ${TLPI_LIB} -lm
+CFLAGS = ${IMPL_CFLAGS}
+
+IMPL_THREAD_FLAGS = -pthread
+
+TMPL_LDLIBS = ${TLPI_LIB} -lm
+
+LDLIBS = ${TMPL_LDLIBS}
 
 RM = rm -f
